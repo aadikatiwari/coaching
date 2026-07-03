@@ -26,7 +26,7 @@
   font-size:30px;
   font-weight:bold;
   white-space:nowrap;
-  color:black;
+  color:white;
 }
 
 .logo span{
@@ -106,10 +106,12 @@
   border-radius:8px;
   padding:10px 0;
   display:none;
+  
 }
 
 .nav-item:hover .dropdown{
   display:block;
+  
 }
 
 .dropdown li{
@@ -118,7 +120,7 @@
 
 .dropdown li a{
   text-decoration:none;
-  color:white;
+  color:black;
   display:block;
 }
 

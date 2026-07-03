@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.services{
+    width:100%;
+    padding:90px 8%;
+    background:#f8fafc;
+}
+
+.service-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.service-heading span{
+    color:#ff6600;
+    font-size:15px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.service-heading h2{
+    font-size:42px;
+    margin-top:15px;
+    color:#222;
+}
+
+.service-heading p{
+    max-width:750px;
+    margin:20px auto;
+    color:#666;
+    line-height:28px;
+    font-size:17px;
+}
+
+.service-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.service-card{
+    background:white;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.4s;
+    cursor:pointer;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 35px rgba(0,0,0,.15);
+}
+
+.service-icon{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background:#ff6600;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+.service-card h3{
+    font-size:24px;
+    color:#222;
+    margin-bottom:15px;
+}
+
+.service-card p{
+    color:#666;
+    line-height:28px;
+    margin-bottom:25px;
+}
+
+.service-card button{
+    border:none;
+    background:#ff6600;
+    color:white;
+    padding:12px 28px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+.service-card button:hover{
+    background:#e55a00;
+}
+
+@media(max-width:992px){
+
+.service-heading h2{
+    font-size:34px;
+}
+
+.service-card{
+    padding:28px;
+}
+
+}
+
+@media(max-width:768px){
+
+.services{
+    padding:70px 5%;
+}
+
+.service-heading h2{
+    font-size:28px;
+}
+
+.service-heading p{
+    font-size:16px;
+}
+
+.service-card{
+    text-align:center;
+}
+
+.service-icon{
+    margin:0 auto 20px;
+}
+
+}
