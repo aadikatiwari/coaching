@@ -94,7 +94,7 @@
 }
 
 .service-card button:hover{
-    background:#e55a00;
+    background:blue;
 }
 
 @media(max-width:992px){
