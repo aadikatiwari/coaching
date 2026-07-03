@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.hero{
+    width:100%;
+    height:90vh;
+    position:relative;
+    overflow:hidden;
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center;
+    opacity:0;
+    transform:scale(1.08);
+    transition:all 1s ease;
+}
+
+.slide.active{
+    opacity:1;
+    transform:scale(1);
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+}
+
+.content{
+    width:50%;
+    margin-left:8%;
+    color:white;
+}
+
+.content h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.content p{
+    font-size:20px;
+    line-height:1.7;
+    margin-bottom:35px;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn1,
+.btn2{
+    padding:14px 35px;
+    border:none;
+    cursor:pointer;
+    border-radius:40px;
+    font-size:16px;
+    transition:.4s;
+}
+
+.btn1{
+    background:#00bcd4;
+    color:white;
+}
+
+.btn1:hover{
+    background:white;
+    color:#00bcd4;
+    transform:translateY(-5px);
+}
+
+.btn2{
+    background:white;
+    color:#222;
+}
+
+.btn2:hover{
+    background:#00bcd4;
+    color:white;
+    transform:translateY(-5px);
+}
+
+.left,
+.right{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    font-size:28px;
+    cursor:pointer;
+    background:rgba(255,255,255,.25);
+    color:white;
+    transition:.4s;
+}
+
+.left{
+    left:25px;
+}
+
+.right{
+    right:25px;
+}
+
+.left:hover,
+.right:hover{
+    background:#00bcd4;
+}
+
+.dots{
+    position:absolute;
+    bottom:25px;
+    width:100%;
+    text-align:center;
+}
+
+.dot{
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    display:inline-block;
+    margin:0 8px;
+    background:white;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.activeDot{
+    background:#00bcd4;
+    transform:scale(1.4);
+}
+
+@media(max-width:768px){
+
+.hero{
+    height:70vh;
+}
+
+.content{
+    width:90%;
+}
+
+.content h1{
+    font-size:36px;
+}
+
+.content p{
+    font-size:16px;
+}
+
+.buttons{
+    flex-direction:column;
+    width:220px;
+}
+
+.left,
+.right{
+    width:45px;
+    height:45px;
+}
+
+}
