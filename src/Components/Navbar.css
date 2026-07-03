@@ -5,7 +5,7 @@
   justify-content:space-between;
   align-items:center;
   padding:15px 6%;
-  background:#fff;
+  background: black;
   box-shadow:0 3px 12px rgba(0,0,0,0.08);
   position:sticky;
   top:0;
@@ -29,7 +29,7 @@
 }
 
 .logo span{
-  color:#ff6600;
+  color: blue;
 }
 
 /* Search Box */
@@ -58,7 +58,7 @@
   width:55px;
   height:100%;
   border:none;
-  background:#ff6600;
+  background: blue;
   color:white;
   cursor:pointer;
   transition:.3s;
@@ -66,7 +66,7 @@
 }
 
 .search-box button:hover{
-  background:#e65c00;
+  background:blue;
 }
 
 /* Navigation */
@@ -83,13 +83,13 @@
 
 .nav-item>a{
   text-decoration:none;
-  color:#333;
+  color:white;
   font-weight:600;
   transition:.3s;
 }
 
 .nav-item>a:hover{
-  color:#ff6600;
+  color: blue;
 }
 
 /* Dropdown */
@@ -117,7 +117,7 @@
 
 .dropdown li a{
   text-decoration:none;
-  color:#444;
+  color:white;
   display:block;
 }
 
@@ -147,12 +147,12 @@
 }
 
 .signup{
-  background:#ff6600;
+  background:blue;
   color:white;
 }
 
 .signup:hover{
-  background:#e65c00;
+  background: blue;
 }
 
 /* Responsive */
