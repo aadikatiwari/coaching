@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
+import { FaSearch } from "react-icons/fa";
 
 function Navbar() {
+  const [search, setSearch] = useState("");
+
   const menuItems = [
     {
       title: "Courses",
@@ -56,13 +59,38 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo">
-        <span>CODEX</span> Technologies
+
+      {/* Left Section */}
+      <div className="left-section">
+
+        {/* Logo */}
+        <div className="logo">
+          <span>CODEX</span> Technologies
+        </div>
+
+        {/* Search Box */}
+        <div className="search-box">
+
+          <input
+            type="text"
+            placeholder="Search Courses..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+
+          <button>
+            <FaSearch />
+          </button>
+
+        </div>
+
       </div>
 
+      {/* Navigation */}
       <ul className="nav-menu">
         {menuItems.map((menu, index) => (
           <li key={index} className="nav-item">
+
             <a href="#">{menu.title}</a>
 
             {menu.submenu.length > 0 && (
@@ -74,14 +102,17 @@ function Navbar() {
                 ))}
               </ul>
             )}
+
           </li>
         ))}
       </ul>
 
+      {/* Buttons */}
       <div className="buttons">
         <button className="login">Login</button>
         <button className="signup">Sign Up</button>
       </div>
+
     </nav>
   );
 }
