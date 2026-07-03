@@ -61,7 +61,7 @@
     width:80px;
     height:80px;
     border-radius:50%;
-    background:#ff6600;
+    background:blue;
     color:white;
     display:flex;
     justify-content:center;
@@ -84,7 +84,7 @@
 
 .service-card button{
     border:none;
-    background:#ff6600;
+    background:blue;
     color:white;
     padding:12px 28px;
     border-radius:30px;
