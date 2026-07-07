@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from "./Components/Navbar";
 import HeroSlider from "./Components/HeroSlider";
 import Courses from "./Components/Course";
