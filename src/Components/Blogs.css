@@ -1,0 +1,352 @@
+/* ==========================================
+   BLOGS SECTION
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+.blogs{
+    width:100%;
+    padding:90px 8%;
+    background:#f8fbff;
+}
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.blogs-heading{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.blogs-heading h5{
+    color:#ff6b00;
+    font-size:18px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+.blogs-heading h2{
+    font-size:42px;
+    color:#222;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.blogs-heading h2 span{
+    color:#ff6b00;
+}
+
+.blogs-heading p{
+    width:70%;
+    margin:auto;
+    color:#666;
+    font-size:17px;
+    line-height:30px;
+}
+
+/* ==========================================
+   SEARCH BAR
+========================================== */
+
+.blog-search{
+    width:100%;
+    max-width:650px;
+    margin:45px auto;
+    display:flex;
+    align-items:center;
+    background:#fff;
+    border-radius:50px;
+    overflow:hidden;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.blog-search:hover{
+    transform:translateY(-3px);
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+}
+
+.blog-search .search-icon{
+    margin-left:20px;
+    color:#ff6b00;
+    font-size:20px;
+}
+
+.blog-search input{
+    flex:1;
+    border:none;
+    outline:none;
+    padding:18px;
+    font-size:16px;
+    background:transparent;
+}
+
+.blog-search input::placeholder{
+    color:#999;
+}
+
+/* ==========================================
+   BLOG GRID
+========================================== */
+
+.blog-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:35px;
+}
+
+/* ==========================================
+   BLOG CARD
+========================================== */
+
+.blog-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.4s;
+    cursor:pointer;
+}
+
+.blog-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+/* ==========================================
+   BLOG IMAGE
+========================================== */
+
+.blog-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.blog-card:hover img{
+    transform:scale(1.08);
+}
+
+/* ==========================================
+   BLOG CONTENT
+========================================== */
+
+.blog-content{
+    padding:25px;
+}
+
+.category{
+    display:inline-block;
+    padding:7px 18px;
+    background:#ff6b00;
+    color:#fff;
+    border-radius:30px;
+    font-size:13px;
+    margin-bottom:15px;
+    font-weight:600;
+}
+
+.blog-content h3{
+    color:#222;
+    font-size:24px;
+    margin-bottom:15px;
+    line-height:34px;
+}
+
+.blog-content p{
+    color:#666;
+    font-size:15px;
+    line-height:28px;
+}
+
+/* ==========================================
+   BLOG INFO
+========================================== */
+
+.blog-info{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    margin:18px 0;
+    color:#777;
+    font-size:14px;
+    gap:10px;
+}
+
+.blog-info span{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.blog-info svg{
+    color:#ff6b00;
+    font-size:14px;
+}
+
+/* ==========================================
+   READ MORE BUTTON
+========================================== */
+
+.read-btn{
+    margin-top:20px;
+    padding:12px 24px;
+    background:#ff6b00;
+    color:#fff;
+    border:none;
+    border-radius:30px;
+    font-size:15px;
+    font-weight:600;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.read-btn:hover{
+    background:#e65c00;
+    transform:translateY(-3px);
+}
+
+.read-btn svg{
+    transition:.3s;
+}
+
+.read-btn:hover svg{
+    transform:translateX(6px);
+}
+
+/* ==========================================
+   NO BLOG FOUND
+========================================== */
+
+.no-blog{
+    width:100%;
+    padding:70px;
+    text-align:center;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.no-blog h2{
+    color:#ff6b00;
+    font-size:32px;
+}
+
+/* ==========================================
+   EXPLORE BLOGS
+========================================== */
+
+.explore-blogs{
+    margin-top:70px;
+    text-align:center;
+}
+
+.explore-btn{
+    padding:15px 35px;
+    background:#ff6b00;
+    color:#fff;
+    border:none;
+    border-radius:40px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    transition:.3s;
+}
+
+.explore-btn:hover{
+    background:#e65c00;
+    transform:translateY(-3px);
+}
+
+.explore-btn svg{
+    font-size:15px;
+}
+
+/* ==========================================
+   EXTRA BLOG GRID
+========================================== */
+
+.more-blogs{
+    margin-top:45px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+/* ==========================================
+   EXTRA BLOG CARD
+========================================== */
+
+.more-blog-card{
+    background:#fff;
+    border-radius:18px;
+    padding:28px;
+    text-align:left;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.more-blog-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+}
+
+.more-blog-content h4{
+    color:#222;
+    font-size:20px;
+    margin-bottom:12px;
+    line-height:30px;
+}
+
+.more-blog-content p{
+    color:#666;
+    line-height:28px;
+    margin-bottom:20px;
+    font-size:15px;
+}
+
+/* ==========================================
+   SMALL BUTTON
+========================================== */
+
+.small-read-btn{
+    padding:10px 20px;
+    background:#ffffff;
+    color:#ff6b00;
+    border:2px solid #ff6b00;
+    border-radius:30px;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+    transition:.3s;
+    font-weight:600;
+}
+
+.small-read-btn:hover{
+    background:#ff6b00;
+    color:#fff;
+}
+
+.small-read-btn svg{
+    transition:.3s;
+}
+
+.small-read-btn:hover svg{
+    transform:translateX(5px);
+}
